@@ -26,6 +26,7 @@ h1{
 }
 span{
     font-size: 2em;
+    font-weight: bold;
 }
 p{
     position: absolute;
