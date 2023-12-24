@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Home Christmas';
+    src: local('Home Christmas'), url('fonts/Home Christmas.otf') format('opentype');
+}
+
+body {
+    font-family: 'Home Christmas', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("img/navidad.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contador-container {
+    text-align: center;
+}
+
+h1{
+    font-size: 2em;
+}
+span{
+    font-size: 2em;
+}
+p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+@keyframes confetti {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-500px) rotate(360deg);
+    }
+}
+
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #e44d26;
+    opacity: 0.7;
+    border-radius: 50%;
+    animation: confetti 3s ease-out;
+}
